@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience & Skills</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+        <!-- Navbar -->
+        <nav class="bg-white shadow-md fixed w-full z-10">
+            <div class="container mx-auto flex justify-between items-center p-4">
+                <div class="text-2xl font-bold">My Portfolio</div>
+                <div class="space-x-4">
+                    <a href="index.html" class="hover:text-blue-500">About Me</a>
+                    <a href="projects.html" class="hover:text-blue-500">Projects</a>
+                    <a href="experience.html" class="hover:text-blue-500">Experience & Skills</a>
+                    <a href="resume.html" class="hover:text-blue-500">Resume</a>
+                    <a href="contact.html" class="hover:text-blue-500">Contact</a>
+                </div>
+            </div>
+        </nav>
+    <section id="experience" class="py-12">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <h2 class="text-4xl font-bold text-center mb-8 mt-16">Experience & Skills</h2>
+
+            <!-- Experience Section -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6">Experience</h3>
+                <div class="space-y-8">
+
+                    <!-- Experience 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 fade-in">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4">
+                            <div>
+                                <h4 class="text-xl font-semibold">Data Scientist</h4>
+                                <p class="text-gray-600">DIALOG AXIATA PLC, Colombo, Sri Lanka</p>
+                            </div>
+                            <span class="text-gray-500">Aug 2024 – Present</span>
+                        </div>
+
+                        <div class="pl-4">
+                            <div class="mb-4">
+                                <h5 class="text-lg font-medium">ETL - Facebook Ad Campaign Data to BigQuery</h5>
+                                <p class="text-gray-700 mb-2">Developed Facebook Campaign Ads data integration into BigQuery using Google Cloud Functions, significantly reducing monthly costs and enhancing efficiency in marketing data analysis.</p>
+                                <div class="flex flex-wrap">
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">Python</span>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">BigQuery</span>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">Google Cloud</span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="text-lg font-medium">Bitly Click Tracking with Cloud-Based Automation</h5>
+                                <p class="text-gray-700 mb-2">Developed a Google Cloud Function to automate daily Bitly link tracking, integrating directly with Google Sheets for real-time analytics.</p>
+                                <div class="flex flex-wrap">
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">Python</span>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">Bitly API</span>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">Google Cloud Functions</span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="text-lg font-medium">Web Scraping - Meta Ad-library</h5>
+                                <p class="text-gray-700 mb-2">Built a data scraper to collect Facebook ad text and media details with database integration and a Streamlit interface.</p>
+                                <div class="flex flex-wrap">
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">Python</span>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">Selenium</span>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">BeautifulSoup</span>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">Streamlit</span>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 fade-in">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4">
+                            <div>
+                                <h4 class="text-xl font-semibold">Data Scientist Intern</h4>
+                                <p class="text-gray-600">MAS CAPITAL, Colombo, Sri Lanka</p>
+                            </div>
+                            <span class="text-gray-500">March 2023 – October 2023 &middot; 8 mos</span>
+                        </div>
+
+                        <div class="pl-4">
+                            <div class="mb-4">
+                                <h5 class="text-lg font-medium">MAS Bodyline Airfreight Analytic Solution</h5>
+                                <p class="text-gray-700 mb-2">Automated air freight analytics dashboard using Python and Power BI, streamlining ETL processes and reducing airfreight delays by 15%.</p>
+                                <div class="flex flex-wrap">
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">PowerBI</span>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">Python</span>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">Power Automate</span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="text-lg font-medium">MAS Intimates Inventory Provisioning Analysis</h5>
+                                <p class="text-gray-700 mb-2">Developed an inventory provisioning dashboard for MAS Intimates using Python and Power BI, optimizing raw material costs, and decreasing provisions by 10%.</p>
+                                <div class="flex flex-wrap">
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">PowerBI</span>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">Python</span>
+                                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 mr-2 mb-2 rounded-full">Jupyter Notebook</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-6">Skills</h3>
+                <div class="flex flex-wrap justify-center">
+                    <span class="m-2 text-center bg-white rounded-lg shadow-md px-4 py-2">Python</span>
+                    <span class="m-2 text-center bg-white rounded-lg shadow-md px-4 py-2">BigQuery</span>
+                    <span class="m-2 text-center bg-white rounded-lg shadow-md px-4 py-2">Google Cloud</span>
+                    <span class="m-2 text-center bg-white rounded-lg shadow-md px-4 py-2">Bitly API</span>
+                    <span class="m-2 text-center bg-white rounded-lg shadow-md px-4 py-2">Selenium</span>
+                    <span class="m-2 text-center bg-white rounded-lg shadow-md px-4 py-2">BeautifulSoup</span>
+                    <span class="m-2 text-center bg-white rounded-lg shadow-md px-4 py-2">Streamlit</span>
+                    <span class="m-2 text-center bg-white rounded-lg shadow-md px-4 py-2">MySQL</span>
+                    <span class="m-2 text-center bg-white rounded-lg shadow-md px-4 py-2">PowerBI</span>
+                    <span class="m-2 text-center bg-white rounded-lg shadow-md px-4 py-2">Power Automate</span>
+                    <span class="m-2 text-center bg-white rounded-lg shadow-md px-4 py-2">Jupyter Notebook</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const fadeInElements = document.querySelectorAll('.fade-in');
+            fadeInElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('show');
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+
+</html>

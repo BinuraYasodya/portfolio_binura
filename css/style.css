@@ -1,0 +1,34 @@
+/* Custom Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.progress-bar {
+    @apply h-2 bg-gray-200 rounded-full overflow-hidden;
+}
+
+.progress-fill {
+    @apply h-full bg-blue-500 transition-all duration-500;
+}
+
+.project-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105;
+}
+
+.tech-tags span {
+    @apply inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm mr-2;
+}
+
+.filter-btn {
+    @apply px-4 py-2 rounded-full bg-gray-100 text-gray-700 transition-all hover:bg-blue-500 hover:text-white;
+}
+
+.filter-btn.active {
+    @apply bg-blue-500 text-white;
+}
+
+.nav-link {
+    @apply transition-colors duration-300;
+}

@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Smooth scroll
+    // Smooth scroll and Google Analytics event tracking
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -34,11 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth'
                 });
 
-                // Google Analytics Event Tracking
-                gtag('event', 'home_sections', {
-                    'event_category': 'Navigation',
-                    'event_label': this.textContent.trim()
-                });
+                // Send event to Google Analytics
+                if (typeof gtag === 'function') {
+                    gtag('event', 'home_sections', {
+                        'event_category': 'Navigation',
+                        'event_label': this.textContent.trim(),
+                        'section_name': this.textContent.trim() // Custom Parameter
+                    });
+                }
             }
         });
     });

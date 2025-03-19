@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // Track event for filtering projects
-            trackSectionClick('Project Filtering', filter);
+            trackSectionClick('Project Filtering', filter); // Track the filter applied
         });
     });
 

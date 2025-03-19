@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,34 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-100">
-    <!-- Navbar -->
+<body class="bg-white text-black">
     <nav class="bg-white shadow-md fixed w-full z-10">
         <div class="container mx-auto flex justify-between items-center p-4">
-            <div class="text-2xl font-bold">My Portfolio</div>
+            <div class="text-2xl font-bold text-black">My Portfolio</div>
             <div class="space-x-4">
-                <a href="index.html" class="hover:text-blue-500">About Me</a>
-                <a href="projects.html" class="hover:text-blue-500">Projects</a>
-                <a href="experience.html" class="hover:text-blue-500">Experience & Skills</a>
-                <a href="resume.html" class="hover:text-blue-500">Resume</a>
-                <a href="contact.html" class="hover:text-blue-500">Contact</a>
+                <a href="index.html" class="hover:text-blue-500 text-black">About Me</a>
+                <a href="projects.html" class="hover:text-blue-500 text-black">Projects</a>
+                <a href="experience.html" class="hover:text-blue-500 text-black">Experience & Skills</a>
+                <a href="resume.html" class="hover:text-blue-500 text-black">Resume</a>
+                <a href="contact.html" class="hover:text-blue-500 text-black">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main class="pt-16">
-        <section id="about" class="bg-white dark:bg-gray-900 py-12">
+        <section id="about" class="bg-white py-12">
             <div class="container mx-auto px-6">
-                <!-- Profile Picture -->
                 <div class="flex justify-center mb-6">
                     <img src="assets/images/profile-pic.jpg" alt="Binura Yasodya" class="w-32 h-32 rounded-full object-cover shadow-lg">
                 </div>
 
                 <!-- Introduction -->
                 <div class="text-center mb-8">
-                    <h1 class="text-4xl font-bold mb-4 text-gray-800 dark:text-white">Hello, I'm Binura Yasodya</h1>
-                    <p class="text-lg text-gray-700 dark:text-gray-300">
+                    <h1 class="text-4xl font-bold mb-4 text-black">Hello, I'm Binura Yasodya</h1>
+                    <p class="text-lg text-black">
                         I'm a passionate Data Scientist with expertise in AI, Machine Learning, and Web Scraping.
                         I thrive on transforming complex data into actionable insights and innovative solutions.
                     </p>
@@ -44,70 +40,94 @@
 
                 <!-- Storytelling -->
                 <div class="mb-8">
-                    <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">My Journey</h2>
-                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                    <h2 class="text-2xl font-semibold mb-4 text-black">My Journey</h2>
+                    <p class="text-black">
                         From a young age, I was fascinated by the power of data and its ability to uncover hidden insights.
                         This passion led me to pursue a career in data science, where I could leverage my skills to solve real-world problems.
                     </p>
-                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                    <p class="text-black">
                         Throughout my career, I've embraced challenges and continuously sought opportunities to expand my knowledge.
                         Whether it's developing automated ETL pipelines or building sophisticated data scrapers, I thrive on creating solutions that make a tangible impact.
                     </p>
                 </div>
 
-                <!-- Key Achievements -->
+                <!-- Career Timeline Section -->
                 <div class="mb-8">
-                    <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Key Achievements</h2>
-                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
-                        <li class="mb-2">Developed ETL processes reducing costs by 20%</li>
-                        <li class="mb-2">Automated tracking systems enhancing data analysis efficiency</li>
-                        <li class="mb-2">Built data scrapers integrated with databases and interfaces</li>
-                    </ul>
+                    <h2 class="text-2xl font-semibold mb-4 text-black">Career Timeline</h2>
+                    <div class="border-l-4 border-blue-500 pl-6">
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 bg-blue-500 text-white flex items-center justify-center rounded-full text-sm font-bold">1</div>
+                                <h3 class="ml-4 text-lg font-semibold text-black">Data Scientist at DIALOG AXIATA PLC</h3>
+                            </div>
+                            <p class="text-gray-600">Aug 2024 – Present</p>
+                            <p class="text-black">Developed ETL processes, automated tracking systems, and built data scrapers.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 bg-blue-500 text-white flex items-center justify-center rounded-full text-sm font-bold">2</div>
+                                <h3 class="ml-4 text-lg font-semibold text-black">Data Scientist Intern at MAS CAPITAL</h3>
+                            </div>
+                            <p class="text-gray-600">March 2023 – October 2023 • 8 mos</p>
+                            <p class="text-black">Automated dashboards and developed inventory provisioning solutions.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Technical Skills -->
                 <div class="mb-8">
-                    <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Technical Skills</h2>
-                    <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold mb-4 text-black">Technical Skills</h2>
+                    <div class="space-y-4 w-1/2 mx-auto">
                         <div class="skill-bar">
                             <div class="flex justify-between mb-1">
-                                <span class="text-base font-medium text-gray-800 dark:text-gray-200">Python</span>
-                                <span class="text-sm font-medium text-gray-800 dark:text-gray-200">85%</span>
+                                <span class="text-base font-medium text-black">SQL</span>
+                                <span class="text-sm font-medium text-black">80%</span>
                             </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                <div class="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500" style="width: 85%"></div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
                             </div>
                         </div>
-                        <!-- Add more skill bars similarly -->
-                    </div>
-                </div>
-
-                <!-- Contact Information -->
-                <div class="mb-8">
-                    <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Connect with Me</h2>
-                    <div class="flex flex-wrap justify-center space-x-4">
-                        <a href="mailto:binurayasodya24@gmail.com" 
-                           class="px-4 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300 mb-2">
-                            Email
-                        </a>
-                        <a href="https://www.linkedin.com/in/binura-yasodya-814268217"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="px-4 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300 mb-2">
-                            LinkedIn
-                        </a>
-                        <a href="https://github.com/BinuraYasodya"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="px-4 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300 mb-2">
-                            GitHub
-                        </a>
+                        <div class="skill-bar">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-black">PySpark</span>
+                                <span class="text-sm font-medium text-black">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-black">Pandas</span>
+                                <span class="text-sm font-medium text-black">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-black">BigQuery</span>
+                                <span class="text-sm font-medium text-black">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-black">Power BI</span>
+                                <span class="text-sm font-medium text-black">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
     <script src="js/main.js"></script>
 </body>
 </html>

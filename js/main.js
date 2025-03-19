@@ -1,4 +1,14 @@
-// Project Filtering
+function trackSectionClick(eventCategory, eventLabel) {
+    if (typeof gtag === 'function') {
+        gtag('event', 'section_click', {
+            'event_category': eventCategory,
+            'event_label': eventLabel,
+            'value': 1
+        });
+    }
+}
+
+// Add to filter buttons
 document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
@@ -14,16 +24,19 @@ document.addEventListener('DOMContentLoaded', () => {
             // Filter projects
             projectCards.forEach(card => {
                 const categories = card.dataset.categories.split(' ');
-                if(filter === 'All' || categories.includes(filter)) {
+                if (filter === 'All' || categories.includes(filter)) {
                     card.style.display = 'block';
                 } else {
                     card.style.display = 'none';
                 }
             });
+
+            // Track event for filtering projects
+            trackSectionClick('Project Filtering', filter);
         });
     });
 
-    // Smooth scroll and Google Analytics event tracking
+    // Smooth scroll and GA event tracking
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -34,14 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth'
                 });
 
-                // Send event to Google Analytics
-                if (typeof gtag === 'function') {
-                    gtag('event', 'home_sections', {
-                        'event_category': 'Navigation',
-                        'event_label': this.textContent.trim(),
-                        'section_name': this.textContent.trim() // Custom Parameter
-                    });
-                }
+                // Track navigation event
+                trackSectionClick('Navigation', this.textContent.trim());
             }
         });
     });

@@ -123,5 +123,19 @@
             </div>
         </div>
     </main>
+    <script>
+         function trackHomeSectionClick(clickText) {
+             // Check if dataLayer is available
+             window.dataLayer = window.dataLayer || [];
+             
+             // Push event to dataLayer
+             window.dataLayer.push({
+                 'event': 'home_section',
+                 'click_text': clickText
+             });
+     
+             console.log("DataLayer Event Sent: home_section | Click Text: " + clickText);
+         }
+     </script> 
 </body>
 </html>

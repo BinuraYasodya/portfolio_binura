@@ -27,9 +27,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            
+            const targetSection = document.querySelector(this.getAttribute('href'));
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Google Analytics Event Tracking
+                gtag('event', 'home_sections', {
+                    'event_category': 'Navigation',
+                    'event_label': this.textContent.trim()
+                });
+            }
         });
     });
 });
